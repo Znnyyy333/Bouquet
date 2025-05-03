@@ -1,0 +1,325 @@
+body{
+    display: grid;
+    place-items: center;
+    min-height: 200vh;
+    overflow: hidden;
+    background: #fae1dd;
+}
+
+.container{
+    position: fixed;
+    bottom: 512px;   
+}
+
+.valentine{
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    cursor: pointer;
+    animation: up 3s linear infinite;
+}
+.bouquet{
+    position: relative;
+    width: 340px;
+    height: 200px;
+    background: #f08080;
+    display: grid;
+    place-items: center;
+}
+.bouquet::before{
+    content: '';
+    position: absolute;
+    width: 312px;
+    height: 312px;
+    background: #f08080;
+    transform: rotate(45deg);
+    top: -105px;
+    left: 14px;
+    border-radius: 30px 0 0 0;
+}
+.front{
+    position: absolute;
+    rotate: 10deg;
+    border-right: 245px solid #f4978e;
+    border-top: 170px solid transparent;
+    border-bottom: 260px solid transparent;
+    left: 94px;
+    top: 24px;
+    width: 0;
+    height: 100%;
+    z-index: 0;
+}
+.front::before{
+    position: absolute;
+    rotate: -20deg;
+    content: '';
+    border-left: 352px solid #fda996;
+    border-top: 300px solid transparent;
+    border-bottom: 400px solid transparent;
+    left: -82px;
+    top: -173px;
+}
+
+.photo1{
+    position: relative;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: row;
+    place-items: center;
+    background-color: aliceblue;
+    padding: 12px;
+    rotate: 16deg;
+    top: -200px;
+    left: 90px;
+    width: 150px;
+}
+.photo1 img,
+.photo2 img, 
+.photo3 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.photo2{
+    position: relative;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: row;
+    place-items: center;
+    background-color: aliceblue;
+    padding: 12px;
+    rotate: -13deg;
+    top: -1400px;
+    right: 96px;
+    width: 150px;
+}
+
+.photo3{
+    position: relative;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: row;
+    place-items: center;
+    background-color: aliceblue;
+    padding: 12px;
+    top: -945px;
+    left: 12px;
+    width: 150px;
+}
+
+.tape{
+    position: absolute;
+    rotate: 40deg;
+    border-right: 5px solid #cf483c;
+    border-top: 170px solid transparent;
+    border-bottom: 260px solid transparent;
+    left: 175px;
+    top: 24px;
+    width: 0;
+    height: 100%;
+    z-index: 0;
+}
+
+.tape::before{
+    position: absolute;
+    rotate: -79deg;
+    content: '';
+    border-left: 5px solid #cf483c;
+    border-top: 300px solid transparent;
+    border-bottom: 400px solid transparent;
+    top: -200px;
+}
+
+  .heart {
+    position: absolute;
+    margin: auto;
+    top: 340px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(241, 96, 120);
+    height: 80px;
+    width: 80px;
+    transform:rotate(-45deg) ;
+  }
+  .heart::after {
+    background-color: rgb(241, 96, 120);
+    content: "";
+    border-radius: 50%;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 0px;
+    left: 38px;
+  }
+  .heart::before {
+    content:"" ;
+    background-color: rgb(241, 96, 120);
+    border-radius: 50%;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: -38px;
+    left: 0px;
+  }
+
+  .ulann1{
+    position: relative;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: row;
+    place-items: center;
+    background-color: aliceblue;
+    padding: 12px;
+    top: -300px;
+    left: 12px;
+    width: 220px;
+}
+.ulann1 img,
+.ulann2 img, 
+.ulann3 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.ulann2{
+    position: relative;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: row;
+    place-items: center;
+    background-color: aliceblue;
+    padding: 12px;
+    rotate: -13deg;
+    top: -610px;
+    right: 105px;
+    width: 190px;
+}
+
+.ulann3{
+    position: relative;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: row;
+    place-items: center;
+    background-color: aliceblue;
+    padding: 12px;
+    rotate: 16deg;
+    top: -1040px;
+    left: 90px;
+    width: 200px;
+}
+
+@media only screen and (max-width: 560px) {
+    .bouquet {
+        width: 200px;
+        height: 120px;
+        top: 200px;
+        
+    }
+
+    .bouquet::before {
+        width: 193px;
+        height: 192px;
+        top: -71px;
+        left: -1px;
+        border-radius: 20px 0 0 0;
+    }
+
+    .front {
+        border-right: 145px solid #f4978e;
+        border-top: 100px solid transparent;
+        border-bottom: 160px solid transparent;
+        left: 55px;
+        top: 207px;
+    }
+
+    .front::before {
+        border-left: 220px solid #fda996;
+        border-top: 180px solid transparent;
+        border-bottom: 240px solid transparent;
+        left: -59px;
+        top: -100px;
+    }
+
+    .tape {
+        left: 100px;
+        top: 225px;
+        border-right: 3px solid #cf483c;
+        border-top: 100px solid transparent;
+        border-bottom: 160px solid transparent;
+    }
+
+    .tape::before {
+        border-left: 3px solid #cf483c;
+        border-top: 180px solid transparent;
+        border-bottom: 240px solid transparent;
+        top: -120px;
+    }
+
+    .photo1,
+    .photo2,
+    .photo3,
+    .ulann1,
+    .ulann2,
+    .ulann3 {
+        width: 100px;
+        padding: 6px;
+    }
+
+    .ulann1 {
+        width: 140px;
+    }
+
+    .ulann2 {
+        width: 120px;
+    }
+
+    .ulann3 {
+        width: 130px;
+    }
+
+    .heart {
+        width: 50px;
+        height: 50px;
+        top: 420px;
+    }
+
+    .heart::before,
+    .heart::after {
+        width: 50px;
+        height: 50px;
+        top: -25px;
+        left: 0;
+    }
+
+    .heart::after {
+        top: 0;
+        left: 25px;
+    }
+
+    .photo1 {
+        top: -100px;
+        left: 30px;
+    }
+    .photo2 {
+        top: -900px;
+        right: 47px;
+    }
+    .photo3 {
+        top: -600px;
+        left: 0px;
+    }
+    .ulann1 {
+        top: -200px;
+        left: 0px;
+    }
+    .ulann2 {
+        top: -400px;
+        right: 70px;
+    } 
+    .ulann3 {
+        top: -675px;
+        left: 47px;
+    }
+}
